@@ -61,9 +61,9 @@ function App() {
 
   return (
     <div>
-      <CountRenderer.Provider value={count}>
+      <CountContext.Provider value={count}>
        <Count setCount={setCount} />
-      </CountRenderer.Provider>
+      </CountContext.Provider>
     </div>
    
   )
