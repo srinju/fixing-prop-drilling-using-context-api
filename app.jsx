@@ -86,11 +86,11 @@ function CountRenderer(){
 function Buttons({setCount}) {
   const count = useContext(CountContext);
   return <div>
-    <button onClick={() => {
+    <button style={{margin:10,color:"pink"}} onClick={() => {
       setCount(count + 1);
     }}>Increase</button>
 
-    <button onClick={() => {
+    <button style={{margin:10,color:"pink"}} onClick={() => {
       setCount(count-1);
     }}>Decrease</button>
   </div>
